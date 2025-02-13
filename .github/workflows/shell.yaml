@@ -1,0 +1,25 @@
+name: My file to display jobs
+
+on:
+  push:
+    paths:
+      - xyz.txt
+
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Job 1 - Echo Message
+        run: echo "This is Job 1"
+
+  job2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Job 2 - Echo Message
+        run: echo "This is Job 2"
+
+  jobN:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Job N - Display Message
+        run: echo "This is Job N"
