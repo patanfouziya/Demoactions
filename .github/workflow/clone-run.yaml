@@ -1,0 +1,26 @@
+name: Fouziya-Java app
+
+on: 
+  wrokflow_dispatch:
+Jobs:
+  clone-install-java:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone my current repositary
+        uses: actions/checkout@v2
+
+      - name: install Java programming language
+        uses: actions/setup-java@v2
+        with:
+          distribution: 'temurin'
+          java-version: '11'
+      - name: check java runime version
+        run: java -version
+
+      - name: check java compile version
+        run: javac -version
+
+      - name: compile abc.java file
+        run: javac Abc.java
+      - name: run java file
+        run: java Abc
