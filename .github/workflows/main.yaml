@@ -1,4 +1,4 @@
-name:CICD for my application
+name: CICD for my application
 
 on:
   workflow_dispatch:
