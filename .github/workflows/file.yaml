@@ -6,7 +6,7 @@ jobs:
   clone-install-java:
     runs-on: ubuntu-latest
     steps:
-      - name: Clone my current repositary
+      - name: Clone my current repository
         uses: actions/checkout@v2
 
       - name: install Java programming language
@@ -14,10 +14,10 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: '11'
-      - name: check java runime version
+      - name: check Java runtime version
         run: java -version
 
-      - name: check java compile version
+      - name: check Java compile version
         run: javac -version
 
       - name: compile abc.java file
