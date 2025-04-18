@@ -7,8 +7,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Print WELCOME WORLD
-      run: echo "WELCOME, WORLD!"
+    - name: Print HELLO WORLD
+      run: echo "HELLO, WORLD!"
   say-Bye:
     runs-on: ubuntu-latest
 
